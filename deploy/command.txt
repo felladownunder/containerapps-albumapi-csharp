@@ -1,0 +1,13 @@
+// Get all of my Azure Subs
+az account list 
+
+// Set default Azure Sub
+az account set --subscription <name or id>
+
+// Create RG
+az group create --name RgName --location "Australia East"
+
+
+// Deploy to CreditCard RG
+az deployment group create --resource-group RgName --template-file main.bicep
+
